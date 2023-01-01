@@ -34,5 +34,21 @@
 # print(start + start + middle + end)
 
 # Replacing strings
-name = "Koshe"
-print(name.replace('e', 'a'))
+# name = "Koshe"
+# print(name.replace('e', 'a'))
+# print(name[:4] + 'a') # alternatives
+# print('M' + name[1:]) # alternatives
+
+# using slicing to obtain strings
+# using step size
+# alphabets = 'abcdefghijklmnopqrstuvwxyz'
+# print(alphabets[::7]) # means start from the beginning and iterate through seven letters at a time
+# print(alphabets[4:20:3]) # same principle
+# print(alphabets[-1::-1]) # print everything in reverse
+# print(alphabets[::-1]) # alternative form of above, same result
+
+# Testing long strings for reversability
+lithe = """I am Joshua. I like to reverse things
+            You are reading this upside down
+            Hope you like it."""
+print(lithe[::-1])
