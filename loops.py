@@ -12,6 +12,9 @@
 #     print(text.capitalize())
 
 #***Skip ahead with continue***
+# this is a simple program that squares an input if odd
+# returns an appropriate message if even and continues to run
+
 while True:
     value = input("Integer, please [q to quit]: ")
     if value == 'q':
