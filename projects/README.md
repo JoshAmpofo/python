@@ -1,4 +1,6 @@
-This repo will contain side projects I work on as I study python
+# Side Projects 
+
+### This repo will contain side projects I work on as I study python
 
 ## Project list
 
