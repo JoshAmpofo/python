@@ -1,22 +1,22 @@
 # Sloop through this list and print the values
-# li_tem = [3, 2, 1, 0]
-# for item in li_tem:
-#     print(item)
+li_tem = [3, 2, 1, 0]
+for item in li_tem:
+    print(item)
 
 # second
-# guess_me = 7
-# number = 1
+guess_me = 7
+number = 1
 
-# while True:
-#     if number == guess_me:
-#         print("found it!")
-#         break
-#     elif number < guess_me:
-#         print("too low")
-#     else:
-#         print("oops")
-#         break
-#     number += 1
+while True:
+    if number == guess_me:
+        print("found it!")
+        break
+    elif number < guess_me:
+        print("too low")
+    else:
+        print("oops")
+        break
+    number += 1
 
 # third
 guess_me = 5
