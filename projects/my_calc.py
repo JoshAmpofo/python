@@ -14,18 +14,18 @@ def div(a, b):
 # create list to store operands
 ops = ['+', '-', '*', '/']
 
-# Ask user for input
+# Ask user to choose operand
 print("******* Welcome to the Awesome Calculator *******")
 print("What operation do you want to perform: ")
 print("Operators are: \n")
 print("""addition: 1\nsubtraction: 2\nmultiplication: 3\ndivision: 4\n""")
 user_input_option = (input("Select option[choose number]: "))
 
-# Ask user to enter two numbers
+# Ask user for data input
 a = float(input("\nEnter first number: "))
 b = float(input("Enter second number: "))
 
-# Display chosen operation option
+# Display chosen operation option and results of operation
 if user_input_option == "1":
     print(f"You have chosen {user_input_option}: add\n")
     print(f"Results: {a} {ops[0]} {b} = {add(a, b)}")
