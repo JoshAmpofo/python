@@ -155,7 +155,125 @@
 # print(rep_list)
 
 # Remove all items using clear()
-work_quotes = ["working hard?", "Quick question!", "Number one priorities!"]
+# work_quotes = ["working hard?", "Quick question!", "Number one priorities!"]
 # print(work_quotes)
-work_quotes.clear()
-print(work_quotes)
+# work_quotes.clear()
+# print(work_quotes)
+
+# Copy with copy(), list() or a Slice
+# a = [1, 2, 3]
+# b = a.copy()
+# print(b)
+# c = list(a)
+# print(c)
+# d = a[:]
+# print(d)
+
+# changing a does not affect any of the copies
+# a[0] = 'integer lists are boring'
+# print(a)
+
+# DEEPCOPY()
+# import copy
+# a = [1, 2, [8, 9]]
+# b = copy.deepcopy(a)  # keeps the value of the copy in place
+# print(a)
+# print(b)
+# a[2][1] = 10
+# print(a)  # change will only affect this 
+# print(b)
+
+# Index
+# We can use an index to find the position of an element in a list
+# simpsons = ["Lisa", "Bart", "Marge", "Homer", "Bart"]
+# print(simpsons.index("Bart"))
+# You can use in to test if an element exists in a list
+# print("Lisa" in simpsons)
+# print(simpsons.count("Bart"))
+# print(type(', '.join(simpsons)))  # convert list to string
+
+# Compare lists
+# a = [7, 2]
+# b = [7, 2, 9]
+# print(a == b)
+# print(a <= b)
+# print(a < b)
+
+# cheeses = ['brie', 'gjetost', 'havarti']
+# for cheese in cheeses:
+#     if cheese.startswith('x'):
+#         print("I won't eat anything that starts with 'x'")
+#         break
+#     else:
+#         print(cheese)
+# else:
+#     print("Didn't find anything that started with 'x'")
+
+# ITERATING MULTIPLE SEQUENCES WITH ZIP()
+# days = ['Monday', 'Tuesday', 'Wednesday']
+# fruits = ['banana', 'orange', 'peach']
+# drinks = ['coffee', 'tea', 'beer']
+# desserts = ['tiramisu', 'ice cream', 'pie', 'pudding']
+
+# for day, fruit, drink, dessert in zip(days, fruits, drinks, desserts):
+    # print(day, ": drink", drink, "- eat", fruit, "- enjoy", dessert)
+
+# Using zip() to create a tuple
+# english = 'Monday', 'Tuesday', 'Wednesday'
+# french = 'Lundi', 'Mardi', 'Mercredi'
+
+# days = list(zip(english, french))
+# print(days)
+
+# LIST COMPREHENSION
+
+# WAYS TO BUILD A LIST
+# number_list = []
+# number_list.append(1)
+# number_list.append(2)
+# number_list.append(3)
+# number_list.append(4)
+# number_list.append(5)
+# print(number_list)
+
+# OR
+# number_list = []
+# for number in range(1, 6):
+#     number_list.append(number)
+# print(number_list)
+
+# OR
+# number_list = list(range(1, 6))
+# print(number_list)
+
+# USING LIST COMPREHENSION: the more pythonic way
+# number_list = [number for number in range(1, 6)]
+# print(number_list)
+
+# a_list = [number for number in range(1, 6) if number % 2 == 1]
+# print(a_list)
+
+# plain nested
+# rows = range(1, 4)
+# cols = range(1, 3)
+
+# for row in rows:
+#     for col in cols:
+#         print(row, col)
+
+# using list comprehension
+# rows = range(1, 4)
+# cols = range(1, 3)
+
+# cells = [(row, col) for row in rows for col in cols]
+# for cell in cells:
+#     print(cell)
+
+# LIST OF LISTS
+small_birds = ['hummingbird', 'finch']
+extinct_birds = ['dodo', 'passenger pigeon', 'Norwegian Blue']
+carol_birds = [3, 'French hens', 2, 'turtledoves']
+all_birds = [small_birds, extinct_birds, 'macaw', carol_birds]
+# print(all_birds)
+# print(all_birds[0])
+print(all_birds[1][0])
