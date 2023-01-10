@@ -8,4 +8,4 @@
 - Concepts used:
   - functions
   - loops
-  - dictionaries
+  - lists
