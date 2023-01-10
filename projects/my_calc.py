@@ -38,3 +38,5 @@ elif user_input_option == "3":
 elif user_input_option == "4":
      print(f"You have chosen {user_input_option}: divide\n")
      print(f"Results: {a} {ops[3]} {b} = {div(a, b)}")
+else:
+    print("Not an operation!")
