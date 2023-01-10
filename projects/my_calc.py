@@ -15,7 +15,7 @@ def div(a, b):
 ops = ['+', '-', '*', '/']
 
 # Ask user to choose operand
-print("******* Welcome to the Awesome Calculator *******")
+print("******* Welcome to the Awesome Calculator *******\n")
 print("What operation do you want to perform: ")
 print("Operators are: \n")
 print("""addition: 1\nsubtraction: 2\nmultiplication: 3\ndivision: 4\n""")
