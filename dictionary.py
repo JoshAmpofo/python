@@ -38,16 +38,28 @@ pythons = {
 # pythons['Gilliam'] = 'Terry'
 # print(pythons)
 
-some_pythons = {
-    'Graham': 'Chapman',
-    'John': 'Cleese',
-    'Eric': 'Idle',
-    'Terry': 'Gilliam',
-    'Michael': 'Palin',
-    'Terry': 'Jones'
-}
+# some_pythons = {
+#     'Graham': 'Chapman',
+#     'John': 'Cleese',
+#     'Eric': 'Idle',
+#     'Terry': 'Gilliam',
+#     'Michael': 'Palin',
+#     'Terry': 'Jones'
+# }
 # print(some_pythons)
 
 # Get an item by [key] or with get()
-print(some_pythons['John'])
-print(some_pythons['Groucho'])
+# print(some_pythons['John'])
+# print(some_pythons['Groucho'])
+# print(some_pythons.get('John'))
+# print(some_pythons.get("Groucho", "Not a Python"))  # will print 'Not a Python' since key doesn't exist in dict
+# print(some_pythons.get("Groucho")) # default error value of None will be printed if element doesn't exist in dict
+
+# GET ALL KEYS FROM A DICTIONARY USING keys()
+signal = {'green':'go', 'yellow':'go faster', 'red':'smile for the camera'}
+# print(signal.keys())
+# print(list(signals.keys()))
+
+# All values
+print(signal.values())
+print(list(signal.values()))
