@@ -159,3 +159,56 @@ word = 'onomatopoeia'
 vowel_counts = {letter: word.count(letter) for letter in set(word) 
                 if letter in vowels}
 print(vowel_counts)
+
+# JUMPING TO LAMBDA, MAP, FILTER AND REDUCE()
+# lambda & map()
+# a = [1, 2, 3]
+# b = [17, 12, 11, 10]
+# c = [-1, -4, 5, 9]
+
+# print(list(map(lambda x, y, z : 2.5*x + 2*y - z, a, b, c)))
+
+# filter
+# fibonacci = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+# odd_numbers = list(filter(lambda x: x % 2, fibonacci))
+# even_numbers = list(filter(lambda x: x % 2 == 0, fibonacci))
+# print(odd_numbers)
+# print(even_numbers)
+
+# extended version
+# for number in fibonacci:
+#     if number % 2 == 1:
+#         print(number, end=" ")
+
+# REDUCE
+# import functools
+# print(functools.reduce(lambda x, y: x+y, [1, 2, 3, 4]))
+
+#finding the max number in a list using reduce
+# from functools import reduce
+# f = lambda a, b : a if (a > b) else b
+# print(reduce(f, [47, 11, 42, 102, 13]))
+
+# calculating the sum of numbers from 1 to 100
+# print(reduce(lambda x, y: x+y, range(1, 101)))
+
+# my_list = [1, 2, 3, 1, 4, 2, 5]
+# result = 0
+# new_list = set(my_list)
+# for item in new_list:
+#     result +=  item
+# print(result)
+
+# set_1 = { "Python", "C", "Javascript" }
+# set_2 = { "Bash", "C", "Ruby", "Perl" }
+# print(set_1 & set_2)
+
+# a_dict = {"language": "C", "number": 13, "track": "Low_level"}
+# count = 0
+# for key in a_dict.keys():
+#     count += 1
+# print(count)
+
+# a_dict = {"language": "C", "number": [3, 1, 2], "track": "Low_level"}
+# for keys in sorted(a_dict.keys()):
+#     print("{}: {}".format(keys, a_dict[keys]))
