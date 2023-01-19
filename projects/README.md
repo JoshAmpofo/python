@@ -10,7 +10,7 @@
   - loops
   - lists
 
-### 2. Random password generator :security
+### 2. Random password generator
 - Concepts used:
 	- import 
 	- input
