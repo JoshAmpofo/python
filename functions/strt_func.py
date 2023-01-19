@@ -53,13 +53,13 @@
     # print ("it's something")
     
 # Test of None
-def whatis(thing):
-    if thing is None:
-        print(thing, "is None")
-    elif thing:
-        print(thing, "is True")
-    else:
-        print(thing, "is False")
+# def whatis(thing):
+#     if thing is None:
+#         print(thing, "is None")
+#     elif thing:
+#         print(thing, "is True")
+#     else:
+#         print(thing, "is False")
 
 
 # whatis(None)
@@ -101,12 +101,67 @@ def whatis(thing):
 # print(menu('frontenac', dessert='flan', entree='fish'))
 
 # working with default values for parameters
-def menu(wine, entree, dessert='pudding'):
-    return {'wine': wine, 'entree': entree, 'dessert': dessert}
+# def menu(wine, entree, dessert='pudding'):
+    # return {'wine': wine, 'entree': entree, 'dessert': dessert}
 
 # print(menu('chardonnay', 'chicken'))
 
 # NB: supplying an argument to a parameter with a default value
 # results in a replacement of the default value with the 
 # specified value
-print(menu('dunkelfelder', 'duck', 'dougnut'))
+# print(menu('dunkelfelder', 'duck', 'dougnut'))
+
+# DEMONSTRATING THE BUGGY METHOD OF USING mutable datatypes as default
+# function parameters
+
+# def buggy(arg, result=[]):
+#     result.append(arg)
+#     print(result)
+    
+# buggy('a')
+# buggy('b')  # supposed to print only b, however prints [a, b]
+
+# There are two ways to fix this
+# 1. append new parameter after every func call
+# def works(arg):
+#     result = []
+#     result.append(arg)
+#     return result
+
+# print(works('a'))
+# print(works('b'))
+
+# 2. pass somthing else to indicate the first call
+# def nonbuggy(arg, result=None):
+#     if result is None:
+#         result = []
+#     result.append(arg)
+#     print(result)
+    
+# nonbuggy('a')
+# nonbuggy('b')
+
+# EXPANDING/GATHERING ARGS WITH "*"
+# def print_args(*args):
+    # print('Positional args:', args)
+    
+# print_args() # call with nothing
+# print_args(3, 2, 1, 'wait!', 'uh...')  # all args will printed
+
+# if function has required args, place them before *args
+# def print_more(required1, required2, *args):
+#     print('Need this one:', required1)
+#     print('Need this one too:', required2)
+#     print('All the rest:', args)
+    
+# print_more('cap', 'gloves', 'scarf', 'monocle', 'mustache wax')
+
+# EXPLODING AND GATHERING WITH ** (used to bundle dict keys and values)
+# primary syntax:
+def print_kwargs(**kwargs):
+   print("Keyword arguments:", kwargs)
+    
+#print_kwargs()
+
+# print_kwargs(wine='merlot', entree='mutton', dessert='macaroon')
+print_kwargs(wine='chardonnay', dessert='ice cream', entree='filet')
