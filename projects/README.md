@@ -9,3 +9,9 @@
   - functions
   - loops
   - lists
+
+### 2. Random password generator :security
+- Concepts used:
+	- import 
+	- input
+	- f-strings formatting
