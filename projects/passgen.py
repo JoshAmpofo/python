@@ -14,6 +14,9 @@ user_inp = input("Enter desirable length of password: ")
 
 # define passgen function
 def passgen(user_inp=''):
+    '''function takes argument length in the form of a string
+    converts to integer and return passsword of specifed length
+    if user provides no argument, use default length value'''
     if user_inp == '':
         user_inp = 12
     chars = string.ascii_letters + string.digits + string.punctuation
