@@ -29,7 +29,7 @@ while True: # repeat action
         a = float(input("\nEnter first number: "))
         b = float(input("Enter second number: "))
     except ValueError:
-        print("Incorrect input. Enter a valid number")
+        print("\nIncorrect input. Enter a valid number")
         continue
     
     # run operations
