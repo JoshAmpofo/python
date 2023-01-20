@@ -1,22 +1,20 @@
 # define functions
 def add(a, b):
-    return a + b
+    print(a + b)
         
 def sub(a, b):
-    return a - b
+    print(a - b)
     
 def mul(a, b):
-    return a * b
+    print(a * b)
     
 def div(a, b):
-    return a / b
+    print(a / b)
 
-# create list to store operands
-ops = ['+', '-', '*', '/']
+def return_result(func, a, b):
+    func(a, b)
 
 # Ask user to choose operand
-print("******* Welcome to the Awesome Calculator *******\n")
-
 while True: # repeat action
     print("What operation do you want to perform: ")
     print("""addition: 1\nsubtraction: 2\nmultiplication: 3\ndivision: 4\n""")
@@ -36,18 +34,17 @@ while True: # repeat action
     
     # run operations
     if user_input_option == "1":
-        print(f"\nYou have chosen {user_input_option}: add\n")
-        print(f"Result: {a} {ops[0]} {b} = {add(a, b)}\n")
-    elif user_input_option == "2":
-        print(f"\nYou have chosen {user_input_option}: subtract\n")
-        print(f"Result: {a} {ops[1]} {b} = {sub(a, b)}\n")
-    elif user_input_option == "3":
-        print(f"\nYou have chosen {user_input_option}: multiply\n")
-        print(f"Result: {a} {ops[2]} {b} = {mul(a, b)}\n")     
+        return_result(add, a, b)
+
+    if user_input_option == "2":
+        return_result(sub, a, b)
+
+    if user_input_option == "3":
+        return_result(mul, a, b)   
+
     try:
         if user_input_option == "4":
-            print(f"\nYou have chosen {user_input_option}: divide\n")
-            print(f"\nResult: {a} {ops[3]} {b} = {div(a, b)}\n")
+            return_result(div, a, b)
     except ZeroDivisionError:
         print("Cannot divide by zero\n")
         continue
