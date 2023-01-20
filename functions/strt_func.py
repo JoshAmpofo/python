@@ -158,10 +158,51 @@
 
 # EXPLODING AND GATHERING WITH ** (used to bundle dict keys and values)
 # primary syntax:
-def print_kwargs(**kwargs):
-   print("Keyword arguments:", kwargs)
+# def print_kwargs(**kwargs):
+#    print("Keyword arguments:", kwargs)
     
 #print_kwargs()
 
 # print_kwargs(wine='merlot', entree='mutton', dessert='macaroon')
-print_kwargs(wine='chardonnay', dessert='ice cream', entree='filet')
+# print_kwargs(wine='chardonnay', dessert='ice cream', entree='filet')
+
+# SPECIFYING KEYWORD-ONLY ARGUMENTS
+# def print_data(data, *, start=0, end=100):
+    # for value in (data[start:end]):
+        # print(value)
+
+# data = ['a', 'b', 'c', 'd', 'e', 'f']
+# print_data(data)
+
+# print_data(data, start=4)
+# print_data(data, end=2)
+# print_data(data, start=2, end=4)
+# print_data(data, start=2)
+
+# FUNCTIONS ARE FIRST CLASS CITICENS IN PYTHON
+# def answer():
+    # print(42)
+    
+# answer()
+
+# def run_something(func):
+    # func()
+    
+# run_something(answer)
+
+# def add_args(arg1, arg2):
+    # print(arg1 + arg2)
+    
+# def run_something_with_args(func, arg1, arg2):
+    # func(arg1, arg2)
+    
+# run_something_with_args(add_args, 5, 9)
+
+# you can combine the above techniques with *args and **kwargs techniques
+def sum_args(*args):
+    return sum(args) 
+
+def run_with_positional_args(func, *args):
+    return func(*args)
+
+print(run_with_positional_args(sum_args, 1, 2, 3, 4))
