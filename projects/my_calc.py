@@ -1,3 +1,14 @@
+''' This is a basic calculator program written entirely in python. 
+It can perform basic operations such as addition, subtraction, multiplication 
+and division. 
+It takes two integers from a user, performs a user-chosen operation, 
+prints the result and ask the user to perform another operation if they
+so choose. 
+Author: Joshua Ampofo Yentumi. 
+P.S. Will be improving functionality and overall performance as I keep learning
+more about Python''' 
+
+
 # define functions
 def add(a, b):
     return a + b
