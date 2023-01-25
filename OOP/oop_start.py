@@ -1,60 +1,34 @@
-# start
-class Person:
-    pass
+# REFRESH
+# class Cat():
+    # """define an empty class"""
+    # pass
 
-p = Person()  # object/instance/variable of the class
-print(p)
+# CREATE AN INSTANCE (OBJECT) OF THE CLASS
+# a_cat = Cat()
+# another_cat = Cat()
 
-# METHODS (colloquially known as functions)
-class Person:
-    def say_hi(self):
-        print("Hello, how are you?")
-        
-p = Person()
-p.say_hi()  # calling the function
-# alternatively
-Person().say_hi()  # also calling the function
+# ASSIGNING DATA TO OBJECTS BY ASSIGNING VALUES TO ATTRIBUTES
+# a_cat.age = 3
+# a_cat.name = 'Mr. Fuzzybuttons'
+# a_cat.nemesis = another_cat
+# a_cat.nemesis.name = "Mr. Bigglesworth"
 
-# the __init__method()
-class Person:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
-        
-    def say_hi(self):
-        print("Hello, my name is", self.name, self.age)
-        
-p = Person('Josh')
-p.say_hi()
-Person("Josh").say_hi()
+# RETRIEVING DATA BY ACCESSING ATTRIBUTES VALUE
+# print(a_cat.age)  # will print age
+# print(a_cat.name)  # will print name
+# print(a_cat.nemesis)  # will print pointer address
+# print(a_cat.nemesis.name)
 
-class User:
-    id = 89
-    name = "no name"
-    __password = None
-    
-    def __init__(self, new_name=None):
-        self.is_new = True
-        if new_name is not None:
-            self.name = new_name
-            
-u = User()
-print(u.is_new)
-
-class Square:
-    """Create an empty class Square"""
-    pass
-
-my_square = Square()
-print(type(my_square))
-print(my_square.__dict__)
-
-class Square:
-    """Create an empty class Square"""
-    def __init__(self, size):
-        """Args:
-                size: private instance object useful for deterrming
-                some computational attribute of Square such as Area computation
+# INITIALIZING A CLASS
+class Cat():
+    """define the animal Cat"""
+    def __init__(self, name):
+        """initialize Cat
+        Args:
+            name (str): stores name of cat
         """
-        self.__size = size
-          
+        self.name = name
+        
+# creating an object and passing a value to name parameter
+furball = Cat("Grumpy")
+print("Our latest addition:", furball.name)
