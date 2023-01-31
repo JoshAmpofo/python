@@ -1,8 +1,8 @@
-#0. Write a function that adds two integers
-# a and b must be integers or floats, otherwise raise a TypeError exception
-# with the message a must be an integer or b must be an integer
-# a and b must first be casted to integers if they are float
-# Returns an integer
+# #0. Write a function that adds two integers
+# # a and b must be integers or floats, otherwise raise a TypeError exception
+# # with the message a must be an integer or b must be an integer
+# # a and b must first be casted to integers if they are float
+# # Returns an integer
 
 def add_integer(a, b=98):
     """add two integers"""
@@ -27,7 +27,7 @@ try:
 except Exception as e:
     print(e)
     
-# 1. Write a function that divides all elements of a matrix
+# # 1. Write a function that divides all elements of a matrix
 
 def matrix_divided(matrix, div):
     """divide all elements of a matrix"""
@@ -53,7 +53,7 @@ matrix = [
 print(matrix_divided(matrix, 3))
 print(matrix)
 
-#2. Write a function that prints My name is <first name> <last name>
+# #2. Write a function that prints My name is <first name> <last name>
 
 def say_my_name(first_name, last_name=""):
     """print first and last name from an input"""
@@ -72,7 +72,7 @@ except Exception as e:
     print(e)
     
 
-# 3. Write a function that prints a square with the character #
+# # 3. Write a function that prints a square with the character #
 
 def print_square(size):
     """print a square using #"""
@@ -83,7 +83,7 @@ def print_square(size):
     if size > 0:
         print(("#" * size + "\n") * size, end="")
 
-# USE type() instead of isinstance()
+# # USE type() instead of isinstance()
 
 print_square(4)
 print("")
