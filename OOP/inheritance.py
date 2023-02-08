@@ -29,12 +29,12 @@ class Person():
         self.name = name
         print(self.name)
 
-#class MDPerson(Person):
+class MDPerson(Person):
     def __init__(self, name):
         self.name = "Doctor " + name
         print(self.name)
 
-#class JDPerson(Person):
+class JDPerson(Person):
     def __init__(self, name):
         self.name = name + ", Esquire"
         print(self.name)
@@ -53,9 +53,16 @@ class Person():
         self.name = name
 
 class EmailPerson(Person):
+    """ defines email and name details of Person"""
     def __init__(self, name, email):
+        """initialize method
+
+        Args:
+            name (str): name of Person
+            email: email of Person
+        """
         super().__init__(name)  # calls parent init method
-        self.email = email
+        self.email = email  # only attribute that belongs to EmailPerson
 
 bob = EmailPerson("Bob Frapples", 'bob@frapples.com')
 print(bob.name)
