@@ -8,9 +8,7 @@ This variant is called **Wyrdl**
 ## General Rules of the Game
 - six attempts to guess a secret five-letter word
 - after each guess you get feedback about which letters are correctly placed, which are misplaced or which are wrong
-	```diff 
-	+ green 
-	``` means letters are correct and rightly placed
+	- https://placehold.it/150/ffffff/ff0000?text=green means letters are correct and rightly placed
 	- yellow means letters are correct but misplaced
 	- gray means letters are wrong
 
