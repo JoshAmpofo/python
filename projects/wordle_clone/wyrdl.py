@@ -1,9 +1,20 @@
 #!/usr/bin/python3
 """Stage 1 of Wyrdl"""
 
+WORD = "SNAKE"
+
 # ask for user input
-guess = input("Guess a word: ").upper()
-if guess == "SNAKE":
-    print("Correct")
-else:
-    print("Wrong")
+for guess_num in range(1, 7):  # siz tries
+    guess = input(f"\nGuess {guess_num}: ").upper()
+    if guess == WORD:
+        print("Correct")
+        break
+
+    correct_letters = {letter for letter, correct in zip(guess, WORD)
+                       if letter == correct}
+    misplaced_letters = set(guess) & set(WORD) - correct_letters
+    wrong_letters = set(guess) - set(WORD)
+
+    print("Correct letters:", ", ".join(sorted(correct_letters)))
+    print("Misplaced letters:", ", ".join(sorted(misplaced_letters)))
+    print("Wrong letters:", ", ".join(sorted(wrong_letters)))
