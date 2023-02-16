@@ -15,3 +15,10 @@
 	- import 
 	- input
 	- f-strings formatting
+
+### 3. Guess Game
+- Concepts used:
+	- input
+	- loops
+	- counter
+	- f-strings formatting
