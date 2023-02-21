@@ -27,10 +27,12 @@ class Circle():
         return 2 * self.radius
 
     @diameter.setter
-    def diameter(self):
-        self.diameter = diameter
+    def diameter(self, new_radius):
+        self.radius = new_radius
+
+
 
 c = Circle(7)
-#c.diameter = 20
+c.diameter = 20
 print(f"Radius is: {c.radius}")
 print(f"Diameter is: {c.diameter}")
