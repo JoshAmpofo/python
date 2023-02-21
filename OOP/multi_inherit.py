@@ -27,10 +27,27 @@ class Hinny(Horse, Donkey):
     """subclass of child classes Horse and Donkey"""
     pass
 
-#print(Mule.mro())  # show order of attribute/object search
-#print(Hinny.mro())
+# print(Mule.mro())  # show order of attribute/object search
+# print(Hinny.mro())
 
-mule = Mule()
-hinny = Hinny()
-print(mule.says())
-print(hinny.says())
+# mule = Mule()
+# hinny = Hinny()
+# print(mule.says())
+# print(hinny.says())
+
+#####################################################################
+# MIXIN
+class PrettyMix:
+    def dump(self):
+        import pprint
+        pprint.pprint(vars(self))
+
+class Thing(PrettyMix):
+    pass
+
+t = Thing()
+t.name = "Nyarlathotep"
+t.feature = "ichor"
+t.age = "eldritch"
+
+t.dump()
