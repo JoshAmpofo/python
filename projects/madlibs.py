@@ -27,10 +27,10 @@ jumping up and down in its tree. He _______(verb_past_tense) _______(adverb) \
 through the large tunnel that led to its _______(adjective) _______(noun)!" ,
  "Yesterday I went to Disneyland. It was a(n) _______(adjective) day. I saw \
 Mickey Mouse and he gave me a(n) _______(adjective) hug. Then I went on a(n) \
-_______(adjective) ride that made me feel _______(emotion). It was so much \
+_______(adjective) ride that made me feel _______(emotion)!. It was so much \
 fun!.",
- "Tomorrow I will go to school. I hope it will be a(n) _______(adjective) day. \
-I will learn about _______(noun_plural) and _______(noun_plural). Then I will \
+ "Tomorrow I will go to school. I hope it will be a(n) _______(adjective) day!. \
+I will learn about _______(noun_plural) and _______(noun_plural)!. Then I will \
 play with my friends and we will have a(n) _______(adjective) time."
 ]
 
