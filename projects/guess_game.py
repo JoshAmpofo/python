@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """A simple guess the number game"""
-"""P.S: Make print statements more informative""" 
 
 import random
 
