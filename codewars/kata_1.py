@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Write a function that reverses words that have letters greater than 5
 
 def spinWords(sentence):
