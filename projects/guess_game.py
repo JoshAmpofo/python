@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-"""A simple guess the number game"""
-"""Make it more interactive with the print out messages"""
-
 import random
 
+"""A simple guess the number game"""
+
+
 count = 5
-number = random.randint(1, 10)
+number = random.randint(1, 11)
 
 print("****** WELCOME TO GUESS-THE-NUMBER GAME ******\n")
 print("The number is between 1 and 10. You only have 5 tries.\nBEGIN!!!\n")
@@ -18,8 +18,12 @@ while count > 0:
         exit()
     else:
         count -= 1
+        if guess < number:
+            print("Oops! That's too low. Aim higher!")
+        if guess > number:
+            print("uu la la! That's too high!")
         if count == 0:
             print(f"Shoot, you didn't get it right and now GAME OVER!!!.\
  The number was {number}")
         else:
-            print(f"Wrong. You have {count} tries left")
+            print(f"You have {count} tries left")
