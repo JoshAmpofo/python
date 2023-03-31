@@ -5,7 +5,7 @@ import random
 
 
 count = 5
-number = random.randint(1, 11)
+number = random.randint(1, 10)
 
 print("****** WELCOME TO GUESS-THE-NUMBER GAME ******\n")
 print("The number is between 1 and 10. You only have 5 tries.\nBEGIN!!!\n")
