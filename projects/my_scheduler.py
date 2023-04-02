@@ -20,7 +20,7 @@ def screen_time():
 schedule.every().hour.do(water_reminder)
 
 # Everyday at 9pm, shutdown the laptop
-schedule.every().day.at("09:00").do(screen_time)
+schedule.every().day.at("21:00").do(screen_time)
 
 # Loop so that the scheduling task keeps running all the time
 while True:
