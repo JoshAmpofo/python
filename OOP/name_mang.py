@@ -1,4 +1,6 @@
 #!/bin/python3
+"""understanding name mangling in python"""
+
 
 class Duck():
     def __init__(self, input_name):
