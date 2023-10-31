@@ -1,23 +1,21 @@
 #!/usr/bin/python3.10
 
 """
-author: joshua ampofo yentumi
+Author: Joshua Ampofo Yentumi
 
-file description: extra challenge in day 1 of 50 days of python
+Day One Extra Challenge: Longest Value
 
-
-program description: write a function **longest_value** that takes
-a dictionary as argument and returns the first longest value in dictionary
+Project Description: This program takes a dictionary as an argument and returns the first 
+longest value in dictionary
 """
 
 
 def longest_value(dict):
     """
-    args:
-        dict (strings): holds keys for which to determine longest
-                        value
-    return:
-        first longest value
+    Args:
+        dictionary (dict): dictionary to check for longest value
+    Returns:
+        longest_value (str): longest value in dictionary
     """
     if not dict:
         return None
