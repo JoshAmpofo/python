@@ -23,5 +23,5 @@ def longest_value(dict):
     long_value = max(dict.values(), key=len)
     return long_value
 
-
-print(longest_value({'fruit':'apple', 'color':'green'}))
+fruits = {'fruit': 'apple', 'color':'green'}
+print(longest_value(fruits))

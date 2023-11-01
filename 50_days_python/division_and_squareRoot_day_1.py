@@ -19,9 +19,9 @@ def divide_or_square(num):
     """
     from math import sqrt
     if num % 5 == 0:
-        return sqrt(num)
+        return f"Square root of {num} is {sqrt(num):.2f}"
     else:
-        return num % 5
+        return f"Remainder of {num} / 5 is {num % 5}"
 
 # call function
-print(round(divide_or_square(120), 2))
+print(divide_or_square(100))
