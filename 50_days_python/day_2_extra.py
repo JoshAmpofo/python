@@ -28,6 +28,8 @@ def check_duplicates(lst):
                 new_lst.append(word)
             else:
                 seen_str.add(word)  # store word only once
+        if not new_lst:
+            return "No duplicates"
         return new_lst  # duplicate or empty
     else:
         return "Sorry, argument should be a list only!" 
