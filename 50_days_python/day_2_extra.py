@@ -10,7 +10,7 @@ Description: This program takes a list of strings as arguments
 """
 
 
-def check_duplicates(lst=[]):
+def check_duplicates(lst):
     """
     checks a list of strings for duplicates
 
@@ -30,8 +30,44 @@ def check_duplicates(lst=[]):
                 seen_str.add(word)  # store word only once
         return new_lst  # duplicate or empty
     else:
-        return "Sorry, argument should be list only!" 
+        return "Sorry, argument should be a list only!" 
     
+
+fruits = ["apple", "orange", "banana", "apple", "banana"]
+names = ["Yoda", "Moses", "Joshua", "Mark"]
+
+print(check_duplicates(fruits))
+print(check_duplicates(names))
+print(check_duplicates(("Eat", "Code", "Sleep", "Code", "Repeat")))
+
+
+
+
+#### ALTERNATIVE SOLUTION ####
+def check_duplicates(lst):
+    """
+    checks a list of strings for duplicates
+
+    Args:
+        lst(list): list containing strings
+        
+    Return:
+        new_lst (list): new list containing duplicates
+    """
+    if isinstance(lst, list):
+        # create an empty list
+        new_lst = []
+        for word in lst:
+            if lst.count(word) > 1 and word not in new_lst:
+                new_lst.append(word)
+        if new_lst:
+            return new_lst
+        else:
+            return "No duplicates"
+    else:
+        return "Sorry, argument must be a list!"
+
+
 
 fruits = ["apple", "orange", "banana", "apple", "banana"]
 names = ["Yoda", "Moses", "Joshua", "Mark"]
