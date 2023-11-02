@@ -22,7 +22,7 @@ def check_duplicates(lst=[]):
     """
     if isinstance(lst, list):
         new_lst = []
-        seen_str = set()  # store duplicate strings
+        seen_str = set()  # check for unique values in list
         for word in lst:
             if word in seen_str:  # if word appears more than once
                 new_lst.append(word)
