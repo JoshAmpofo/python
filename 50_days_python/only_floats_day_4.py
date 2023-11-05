@@ -17,7 +17,7 @@ def only_floats(a, b):
         b (int/float): second value to check type
     
     Returns:
-        0 if argument is not float
+        0 if both arguments are not floats
         1 if one argument is float
         2 if both arguments are floats
     """
@@ -44,7 +44,7 @@ def only_floats(a, b):
         b (int/float): second value to check type
     
     Returns:
-        0 if argument is not float
+        0 if both arguments are not floats
         1 if one argument is float
         2 if both arguments are floats
     """
