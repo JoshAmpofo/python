@@ -16,10 +16,10 @@ def my_discount():
     Returns:
         price of product after discount
     """ 
-    price = float(input("Enter price of product: "))
+    price = float(input("Enter price of product ($): "))
     discount = float(input("Enter discount: "))
     price_after_discount = price - (price * discount / 100)
-    return price_after_discount
+    return f"New price after {discount}% discount on ${price} is {price_after_discount}"
 
 
 print(my_discount())
