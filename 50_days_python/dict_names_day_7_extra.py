@@ -34,3 +34,28 @@ name = ["Joseph", "Nathan", "Sasha", "Kelly",
         "Muhammad", "Jabulani", "Sera", "Patel",
         "Sera"]
 print(dict_names(name))
+
+
+### ALTERNATIVE METHOD ###
+def dict_names(lst):
+    """
+    count names that begins with S and returns as a dictionary 
+
+    Args:
+        lst (list): list of names
+    
+    Returns:
+        lst (dict): number of names that begin S
+    """
+    # create empty dictionary
+    result = {}
+    for name in lst:
+        if name.startswith("S"):
+            result.update({name: lst.count(name)})  # update and count name
+    return result
+
+
+name = ["Joseph", "Nathan", "Sasha", "Kelly",
+        "Muhammad", "Jabulani", "Sera", "Patel",
+        "Sera"]
+print(dict_names(name))
