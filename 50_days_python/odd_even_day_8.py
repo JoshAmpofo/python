@@ -30,6 +30,6 @@ def odd_even(lst):
     return f"Largest even number: {max(new_lst_even)}\nSmallest odd number: {max(new_lst_odd)}\nDifference: {max(new_lst_even)} - {min(new_lst_odd)} = {result}"
 
 
-#print(odd_even([1, 2, 4, 6]))
-#print(odd_even([2, 10, 50, 3]))
+print(odd_even([1, 2, 4, 6]))
+print(odd_even([2, 10, 50, 3]))
 print(odd_even([-2, -15, -6, -9]))
