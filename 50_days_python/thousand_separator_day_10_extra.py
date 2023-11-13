@@ -24,7 +24,9 @@ def convert_numbers(lst: list):
         raise TypeError("Elements in the list must be numbers")
     if not lst:
         return "Input list is empty"
+    
     new_lst = [format(num, ',') for num in lst]
+    
     return str(new_lst)
 
 
