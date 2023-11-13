@@ -8,7 +8,7 @@ Description: A function that will take a list of huge numbers
 """
 
 
-def convert_numbers(lst: list) -> list:
+def convert_numbers(lst: list):
     """
     convert numbers to strings separated by a thousand separator
 
