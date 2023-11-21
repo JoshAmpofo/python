@@ -20,7 +20,7 @@ def python_snakes(num: int) -> str:
         str: the pyramid of snakes
     """
     # loop through rows in pyramid
-    for row in range(0, num):
+    for row in range(num):
         # loop through columns
         for column in range(num, row, -1):
             # print space
