@@ -35,7 +35,7 @@ def calculate_gross_salary(periods):
     return gross_salary
 
 # main function
-def teacher_salary():
+def your_salary():
     """
     Calculates a teacher's salary based on the number of periods taught, including overtime.
 
@@ -50,4 +50,4 @@ def teacher_salary():
     return f"\nTeacher: {teach_name}\nPeriods: {periods}\nGross Salary: ${gross_salary:,}"
 
 
-print(teacher_salary())
+print(your_salary())
