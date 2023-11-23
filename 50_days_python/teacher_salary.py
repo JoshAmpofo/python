@@ -40,7 +40,7 @@ def your_salary():
     Calculates a teacher's salary based on the number of periods taught, including overtime.
 
     Returns:
-        dict: A dictionary containing the teacher's name, number of periods taught, and gross salary.
+        formatted string containing the teacher's name, number of periods taught, and gross salary.
     """
     teach_name = input("Enter Teacher's name: ").title()
     periods = int(input("Enter number of periods taught: "))
