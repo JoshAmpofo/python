@@ -4,7 +4,7 @@ Author: Joshua Ampofo Yentumi
 Day 17 Extra Challenge: Sort by Length
 
 Description: A function that takes a list of strings as argument and sorts the strings in ascending order according to their length.
-             Do not use built-in sort functions
+             DO NOT use built-in sort functions
 """
 
 
