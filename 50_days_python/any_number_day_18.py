@@ -23,5 +23,5 @@ def any_number(*args):
     return average
 
 
-#print(any_number(12, 90, 12, 34))
+print(any_number(12, 90, 12, 34))
 print(any_number(12, 90))
