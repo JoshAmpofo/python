@@ -10,26 +10,26 @@ Description: A function that takes five numbers as user input and returns the la
 
 def even_or_average() -> int:
     """
-    Checks if five number inputted by user contains an even number or not
+    Checks if five numbers inputted by user contains an even number or not.
 
     Returns:
-        int: largest even number or average of all five input numbers
+        int: largest even number or average of all five input numbers.
     """
-    count = 5
+    # get 5 numbers from user and add to list
     num_list = []
-    while count > 0:
+    for _ in range(5):
         user_num = int(input("Enter a number: "))
         num_list.append(user_num)
-        count -= 1
-        
-    # get even numbers
-    even_numbers = [num for num in num_list if num % 2 == 0]
+    # filter for even numbers    
+    even_numbers = list(filter(lambda num: num % 2 == 0, num_list))
+    # find largest even number
     if even_numbers:
         largest_even_number = max(even_numbers)
-        return f"Largest even number in list: {largest_even_number}"
+        return f"Largest even number in input: {largest_even_number}"
+    # find average
     else:
         average = sum(num_list) / len(num_list)
-        return f"Average of five numbers: {average}"  # get average
+        return f"Average of five numbers: {average}"
 
 
 print(even_or_average())
