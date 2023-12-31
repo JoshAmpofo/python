@@ -9,19 +9,18 @@ import string
 
 def generate_password(length=16, nums=1, special_chars=1, uppercase=1, lowercase=1) -> str:
     """
-    Generate a random password
-    
+    Generate a random password based on the given constraints.
+
     Args:
-        length (int): length of password
-        nums (int): number char constraints to include in password
-        uppercase (str): uppercase char constraints to include in password
-        lowercase (str): lowercase char constraints to include in password
-        special_chars (str): special char constraints to include in password
-    
+        length (int): The length of the password.
+        nums (int): The number of numbers to include in the password.
+        special_chars (int): The number of special characters to include in the password.
+        uppercase (int): The number of uppercase letters to include in the password.
+        lowercase (int): The number of lowercase letters to include in the password.
+
     Returns:
-        password (alphanum): generated password 
+        password (str): The generated password that satisfies all the given constraints.
     """
-    
     # Define the possible characters for the password
     letters = string.ascii_letters
     digits = string.digits
@@ -41,7 +40,7 @@ def generate_password(length=16, nums=1, special_chars=1, uppercase=1, lowercase
             (lowercase, r'[a-z]'),
             (uppercase, r'[A-Z]'),
             (special_chars, fr'[{symbols}]')
-            ]
+        ]
         # Check constraints
         if all(
             constraint <= len(re.findall(pattern, password)) for constraint, pattern in constraints
