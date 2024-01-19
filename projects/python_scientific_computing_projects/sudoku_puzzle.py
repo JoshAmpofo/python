@@ -45,3 +45,14 @@ class Board:
         
         # return complete board
         return board_string
+    
+    def is_valid(self, empty, num):
+        row, col = empty
+        # check if number is valid for insertion
+        valid_in_row = self.valid_in_row(row, num)
+        # check if number is valid for insertion in specified column
+        valid_in_col = self.valid_in_col(col, num)
+        # check if number is valid for insertion in 3x3 square containing specified cell
+        valid_in_square = self.valid_in_square(row, col. num)
+        
+        return all([valid_in_row, valid_in_col, valid_in_square])
