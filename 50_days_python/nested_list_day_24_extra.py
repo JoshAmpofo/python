@@ -16,7 +16,7 @@ def nested_lists(*args: list) -> list:
     """Creates a nested list"""
     nested = [arg for arg in args if isinstance(arg, list)]
 
-    if len(nested) == len(args): # all items are lists
+    if len(nested) == len(args):  # all items are lists
         return nested
     else:
         return "Invalid arguments. Please check your arguments: lists only"
@@ -24,4 +24,4 @@ def nested_lists(*args: list) -> list:
 
 if __name__ == "__main__":
     print(nested_lists([1, 2, 3, 5], [1, 2, 3, 4], [1, 3, 4, 5]))
-    #print(nested_lists([1, 2, 3, 4], (5, 6, 7, 8), [9, 10, 11, 12]))
+    # print(nested_lists([1, 2, 3, 4], (5, 6, 7, 8), [9, 10, 11, 12]))
