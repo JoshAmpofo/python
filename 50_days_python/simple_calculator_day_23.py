@@ -37,7 +37,7 @@ class Calculator:
         try:
             return x / y
         except ZeroDivisionError:
-            raise ZeroDivisionError('Cannot divide by zero')
+            return 'Cannot divide by zero'
 
 
 calc = Calculator()
