@@ -10,7 +10,7 @@ Description: Implement a function called `average calories` that calculates the 
              calorie intake for "any number of days", and once they hit "done", it should calculate and return the average intake.
 """
 def average_calories() -> int:
-    """Calculates the average calorie of a user"""
+    """Calculates the average calories of a user"""
     
     calories_list = []
     while True:
