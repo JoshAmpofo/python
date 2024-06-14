@@ -21,4 +21,5 @@ def index_position(text: str) -> list:
     return [text.index(letter) for letter in text if letter.islower()]
 
 
-print(index_position("LovE"))
+text = "LovE"
+print(index_position(text))
